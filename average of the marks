@@ -1,0 +1,106 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("\n===calculator to find average of your exam===\n");
+
+    int sub1;
+    int sub2;
+    int sub3;
+    int sub4;
+    int sub5;
+    
+
+    printf("\nplease enter the the number of first subject:");
+    scanf("%d", &sub1);
+    printf("please enter the number of second subject:");
+    scanf("%d", &sub2);
+    printf("please enter the number of third subject:");
+    scanf("%d", &sub3);
+    printf(" please enter the number of fourth subject:");
+    scanf("%d", &sub4);
+    printf("please enter the number of fifth subject:");
+    scanf("%d", &sub5);
+    
+
+
+    int sum = sub1 + sub2 + sub3 + sub4 + sub5;
+    float avg = sum/5.0 ;
+    if (sum <=500)
+    {
+    printf("\n\n======Result Summary======\n");
+    printf("your total sum is: %d", sum);
+    printf("\nyour average is: %.2f%% ", avg);
+    }
+    else {
+        printf("\n.....don't make fun, please enter correct number.....\n");
+    }
+    
+    
+    printf("\n\n========-Grade-=========");
+    if(avg > 95){
+        printf("\n A++ \n ");
+    }
+    else if(90 < avg && avg <= 95)
+    {
+        printf("\n A+ \n ");
+    }
+    else if(85 < avg && avg <= 90)
+    {
+    printf("\n A \n ");
+    }
+    else if(75 < avg && avg <= 85)
+    {
+    printf("\n B+ \n ");
+    }
+    else if(65 < avg && avg <= 75)
+    {
+    printf("\n B \n ");
+    }
+    else if(55 < avg && avg <= 65)
+    {
+    printf("\n C \n ");
+    }
+    else if(45 < avg && avg <= 55)
+    {
+    printf("\n D \n ");
+    }
+        else if(33 < avg && avg <= 45)
+    {
+    printf("\n E \n ");
+    }
+    else if(0 <= avg && avg <= 33)
+    {
+    printf("\n f \nsorry! you have to repeat one year \n");
+    }
+    printf("\n========-Remarks-========");
+    
+    if(sub1 < 33){
+        printf("\nsorry!you are failed in subject 1 you have to give retest");
+    }
+    
+    if(sub2 < 33){
+        printf("\nsorry!you are failed in subject 2 you have to give retest ");
+    }   
+    
+    if(sub3 < 33){
+        printf("\nsorry!you are failed in subject 3 you have to give retest ");
+    }  
+     
+    if(sub4 < 33){
+        printf("\nsorry!you are failed in subject 4 you have to give retest ");
+    }   
+    
+    if(sub5 < 33){
+        printf("\nsorry!you are failed in subject 5 you have to give retest ");
+    }
+
+    if (sub1 >= 33 && sub2 >= 33 && sub3 >= 33 && sub4 >= 33 && sub5 >= 33 ){
+        printf("congratulation! you have clear all the subject this year\n\n\n.....good luck for your next year.....");
+    }
+
+    
+
+
+    return 0;
+}
