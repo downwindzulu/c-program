@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+     
+    int x;int y;int a;
+    printf("tell me the no.:");
+    scanf("%d", &x);
+    for(y = x;y <= x*10; y = y + x){
+        printf(" %d\n",y);
+    }
+
+
+    return 0 ;
+}
